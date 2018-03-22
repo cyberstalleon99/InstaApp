@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.clydekhayad.instaapp.VetProfileActivity"
+    tools:showIn="@layout/activity_vet_profile">
+
+    <ImageView
+        android:background="@color/cardview_dark_background"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <ImageView
+        android:id="@+id/vetProfileImageview"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="130dp"
+        android:layout_height="130dp" />
+
+    <TextView
+        android:id="@+id/vetProfileNameTextview"
+        android:layout_below="@+id/vetProfileImageview"
+        android:text="Owner's Name"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/vetProfileClinic"
+        android:layout_below="@+id/vetProfileNameTextview"
+        android:text="Clinic's Name"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/viewOwnerProfileButton"
+        android:layout_below="@+id/vetProfileClinic"
+        android:text="View Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/vetRegisterClinicButton"
+        android:layout_below="@+id/viewOwnerProfileButton"
+        android:text="Register my Clinic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="vetRegisterClinicButtonClicked"/>
+
+    <Button
+        android:id="@+id/ownerViewAppointments"
+        android:layout_below="@+id/vetRegisterClinicButton"
+        android:text="View appointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="vetViewAppointmentButtonClicked"/>
+
+    <Button
+        android:id="@+id/ownerViewRecord"
+        android:layout_below="@+id/ownerViewAppointments"
+        android:text="View Records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="vetViewRecordButtonClicked"/>
+
+</RelativeLayout>

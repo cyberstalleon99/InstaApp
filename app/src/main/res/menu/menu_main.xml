@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.clydekhayad.instaapp.MainActivity">
+
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:title="Home"
+        android:icon="@drawable/ic_home_pink_500_24dp"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/map"
+        android:orderInCategory="100"
+        android:title="Map"
+        android:icon="@drawable/ic_directions_pink_500_24dp"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/myAppointments"
+        android:icon="@drawable/ic_featured_play_list_pink_500_24dp"
+        android:orderInCategory="100"
+        android:title="My Appointments"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_settings_pink_500_24dp"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/search"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="Search" />
+</menu>

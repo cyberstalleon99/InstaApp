@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.clydekhayad.instaapp.NewTreatmentRecordActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Todo: Change the input types to the proper input types-->
+        <TextView
+            android:text="New Treatment Record"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/treat_dateOfTreatEdittext"
+            android:hint="Date of Treatment/Operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/treat_nameOfClinicEdittext"
+            android:hint="Name of Clinic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/treat_nameOfVetEdittext"
+            android:hint="Name of Veterinarian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/treat_nameOfTreatEdittext"
+            android:hint="Name of Treatment/Operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="treatDoneButtonClicked"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

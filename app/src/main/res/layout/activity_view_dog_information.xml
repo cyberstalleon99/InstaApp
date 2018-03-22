@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <!--Todo: Enable the dog owner to edit this information-->
+    <!--Todo: Put a line separator in between-->
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/generalInforTextview"
+            android:text="General Information"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--///////////////////////////////////////////Name of Dog////////////////////////////////////////////////////-->
+
+        <TextView
+            android:id="@+id/nameOfDogTextview"
+            android:text="Name of Dog"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/generalInforTextview"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/nameOfDogValueTextview"
+            android:text="Name of dog here"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@id/nameOfDogTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!--///////////////////////////////////////////Sex of Dog////////////////////////////////////////////////////-->
+
+        <TextView
+            android:id="@+id/sexTextview"
+            android:text="Sex"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/nameOfDogValueTextview"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sexValueTextview"
+            android:text="Name of dog here"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@id/sexTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!--///////////////////////////////////////////Breed of Dog////////////////////////////////////////////////////-->
+
+        <TextView
+            android:id="@+id/breedTextview"
+            android:text="Breed"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/sexValueTextview"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/breedValueTextview"
+            android:text="Breed of dog here"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@id/breedTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!--///////////////////////////////////////////Birthdate of  Dog////////////////////////////////////////////////////-->
+
+        <TextView
+            android:id="@+id/birthdateTextview"
+            android:text="Birthdate"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/breedValueTextview"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/birthdateValueTextview"
+            android:text="Birthdate of dog here"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@id/birthdateTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!--///////////////////////////////////////////Transfer of Dog////////////////////////////////////////////////////-->
+
+        <TextView
+            android:id="@+id/transferTextview"
+            android:text="Transfer"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/birthdateValueTextview"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/transferValueTextview"
+            android:text="Transfer of dog here"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@id/transferTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!--///////////////////////////////////////////Color of Dog////////////////////////////////////////////////////-->
+
+        <TextView
+            android:id="@+id/colorTextview"
+            android:text="Color"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/transferValueTextview"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/colorValueTextview"
+            android:text="Color of dog here"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@id/colorTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--Todo: Add a Back Button and an Edit Button Functionality-->
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.clydekhayad.instaapp.DogTreatmentRecordsActivity">
+
+    <Button
+        android:id="@+id/addTreatRecordButton"
+        android:text="Add Treatment Record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addTreatmentRecordButtonClicked"/>
+
+    <TextView
+        android:id="@+id/treatTextView"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Treatment Records"
+        android:layout_below="@id/addTreatRecordButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/content_dog_treatment_records"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/treatTextView"/>
+
+</RelativeLayout>

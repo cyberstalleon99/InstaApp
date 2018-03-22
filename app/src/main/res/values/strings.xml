@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InstaApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_first_step_registration">FirstStepRegistration</string>
+    <string name="title_activity_add_dog">AddDogActivity</string>
+    <string name="title_activity_dog_profile">DogProfileActivity</string>
+    <string name="title_activity_dog_treatment_records">DogTreatmentRecordsActivity</string>
+    <string name="title_activity_vet_profile">VetProfileActivity</string>
+</resources>

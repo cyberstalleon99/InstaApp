@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.clydekhayad.instaapp.ChooseUserTypeActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Choose which are you:"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="I'm a Dog Owner"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:onClick="dogOwnerButtonOnClicked"/>
+
+        <Button
+            android:text="I'm a Veterinarian"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:onClick="veterinarianButtonOnClicked"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+

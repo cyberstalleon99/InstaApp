@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_owner_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.clydekhayad.instaapp.OwnerProfileActivity">
+
+    <ImageView
+        android:background="@color/cardview_dark_background"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <ImageView
+        android:id="@+id/ownerProfileImageview"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="130dp"
+        android:layout_height="130dp" />
+
+    <TextView
+        android:id="@+id/ownerProfileTextview"
+        android:layout_below="@+id/ownerProfileImageview"
+        android:text="Owner's Name"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/viewOwnerProfileButton"
+        android:layout_below="@+id/ownerProfileTextview"
+        android:text="View Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/ownerAddDogProfileButton"
+        android:layout_below="@+id/viewOwnerProfileButton"
+        android:text="Add Dog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addDogButtonClicked"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ownerAddDogProfileButton"
+        layout="@layout/content_owner_profile" />
+
+</RelativeLayout>
